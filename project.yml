@@ -1,0 +1,106 @@
+name: SwimmingBeast
+
+options:
+  bundleIdPrefix: com.swimmingbeast
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+  xcodeVersion: "15.4"
+  groupOrdering:
+    - order: [SwimPhone, SwimWatch, Shared, Packages]
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    # Set your Apple Developer Team in Xcode (Signing & Capabilities) or here.
+    DEVELOPMENT_TEAM: ""
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+
+packages:
+  SwimKit:
+    path: Packages/SwimKit
+
+targets:
+  SwimPhone:
+    type: application
+    platform: iOS
+    productName: SwimmingBeast
+    sources:
+      - path: SwimPhone
+      - path: Shared
+    dependencies:
+      - package: SwimKit
+        product: SwimCore
+      - package: SwimKit
+        product: SwimHealth
+      - sdk: HealthKit.framework
+      - target: SwimWatch
+    info:
+      path: SwimPhone/Info.plist
+      properties:
+        CFBundleDisplayName: SwimmingBeast
+        LSApplicationCategoryType: public.app-category.healthcare-fitness
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiredDeviceCapabilities:
+          - healthkit
+        NSHealthShareUsageDescription: SwimmingBeast reads your pool swims, distance, stroke counts and heart rate to show your swim history.
+        NSHealthUpdateUsageDescription: SwimmingBeast saves pool swim workouts you record on Apple Watch to Health.
+    entitlements:
+      path: SwimPhone/SwimPhone.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.swimmingbeast.app
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: NO
+    scheme:
+      testTargets:
+        - package: SwimKit/SwimCoreTests
+        - package: SwimKit/SwimHealthTests
+
+  SwimWatch:
+    type: application
+    platform: watchOS
+    productName: SwimmingBeastWatch
+    sources:
+      - path: SwimWatch
+      - path: Shared
+    dependencies:
+      - package: SwimKit
+        product: SwimCore
+      - package: SwimKit
+        product: SwimHealth
+      - sdk: HealthKit.framework
+    info:
+      path: SwimWatch/Info.plist
+      properties:
+        CFBundleDisplayName: SwimmingBeast
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: com.swimmingbeast.app
+        WKBackgroundModes:
+          - workout-processing
+        NSHealthShareUsageDescription: SwimmingBeast reads heart rate and swimming data during your pool swim.
+        NSHealthUpdateUsageDescription: SwimmingBeast saves your pool swim workouts, distance and strokes to Health.
+    entitlements:
+      path: SwimWatch/SwimWatch.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.swimmingbeast.app.watchkitapp
+        TARGETED_DEVICE_FAMILY: "4"
+        SKIP_INSTALL: YES
+    scheme: {}

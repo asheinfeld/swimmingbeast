@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0174B2DA27250B07D6143F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88BB2200980BF66AD36061A /* Assets.xcassets */; };
+		28A29DB7968C1F890818D29D /* SwimCore in Frameworks */ = {isa = PBXBuildFile; productRef = 362F13DE997E28AAB8217C2B /* SwimCore */; };
+		37359212F7A1D13CE973C58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ADA30488DFB4DAF213C32F /* Assets.xcassets */; };
+		43069893D2AB83925B905BCA /* StrokeStyle+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF439594274868930967F4F /* StrokeStyle+UI.swift */; };
+		44BB42713FDDA30398342041 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C44EBB1ED4D881504D39C /* HistoryStore.swift */; };
+		47A8109673D448642F21D03E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C67BDA49F254E54EA3F5796 /* HealthKit.framework */; };
+		4D3A11C447D309D2A330F2D6 /* SwimHealth in Frameworks */ = {isa = PBXBuildFile; productRef = BAA10A4A2141601516F8931F /* SwimHealth */; };
+		5A6C0FE7AC006E94D58EE873 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30DF749B575FACC15C6E26 /* WorkoutDetailView.swift */; };
+		677B7E96C41192538DA3C666 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3C3A89C5B36398B8150783 /* HistoryView.swift */; };
+		6B378D95DAEC73022426F16B /* SwimHealth in Frameworks */ = {isa = PBXBuildFile; productRef = F5FCAAEDBB33C6D801F8F802 /* SwimHealth */; };
+		6F3FAAD156D9C51DCF3AAC8D /* SwimCore in Frameworks */ = {isa = PBXBuildFile; productRef = 351A2BF53B2208247E47C562 /* SwimCore */; };
+		7E0E99451EB1DB5F53C0F480 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C67BDA49F254E54EA3F5796 /* HealthKit.framework */; };
+		9075862258DE99DFB5258CB8 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E75D2170492B3262864A8 /* SetupView.swift */; };
+		A33E0AE222DDF9A370925D31 /* SwimPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110918A8B8D52C306D82839 /* SwimPhoneApp.swift */; };
+		A706ACD386FB61AC5856D63D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3F869192E389E502093648 /* SettingsView.swift */; };
+		A9BC449A91477033182F5CC4 /* StrokeStyle+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF439594274868930967F4F /* StrokeStyle+UI.swift */; };
+		BE6108D3D608B9893045639A /* SwimWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114235C67E572DA854A9D1A /* SwimWatchApp.swift */; };
+		DECB50EF589E23BB00B67BBD /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8262FD6D2B4A8A9F3CFF29 /* SummaryView.swift */; };
+		EF064867F2585A56C652C522 /* SwimmingBeastWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 16F737AC774FCF60AC5E087E /* SwimmingBeastWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F90958FA6444E7B54165B870 /* ActiveSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A4159D3FC58ADE99A9D93 /* ActiveSessionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C566BCD82512FD308E5BA905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD04E0919261B6EE29B2B3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDA197D180791998F5C05901;
+			remoteInfo = SwimWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5118E269888DE5CD66DE8CDE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EF064867F2585A56C652C522 /* SwimmingBeastWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1110918A8B8D52C306D82839 /* SwimPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimPhoneApp.swift; sourceTree = "<group>"; };
+		16F737AC774FCF60AC5E087E /* SwimmingBeastWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimmingBeastWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F15621C4C3BF434A85F5C94 /* SwimKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwimKit; path = Packages/SwimKit; sourceTree = SOURCE_ROOT; };
+		2D0D0F4D2FA76DC5B4F7A275 /* SwimmingBeast.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SwimmingBeast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3218E7247F9C02482A04FE32 /* SwimWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwimWatch.entitlements; sourceTree = "<group>"; };
+		3FF439594274868930967F4F /* StrokeStyle+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StrokeStyle+UI.swift"; sourceTree = "<group>"; };
+		408E75D2170492B3262864A8 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		5D5833AB801FBAFB88C2736F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6C67BDA49F254E54EA3F5796 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		877A4159D3FC58ADE99A9D93 /* ActiveSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSessionView.swift; sourceTree = "<group>"; };
+		8C3C3A89C5B36398B8150783 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		933C44EBB1ED4D881504D39C /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		9C3F869192E389E502093648 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A3A2C1F3911DF31BAF6E8D16 /* SwimPhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwimPhone.entitlements; sourceTree = "<group>"; };
+		A88BB2200980BF66AD36061A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7B88820F84D00AB020DECF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D0ADA30488DFB4DAF213C32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF30DF749B575FACC15C6E26 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		DF8262FD6D2B4A8A9F3CFF29 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		F114235C67E572DA854A9D1A /* SwimWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimWatchApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CA73D5D7E57C48F4087BA9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3FAAD156D9C51DCF3AAC8D /* SwimCore in Frameworks */,
+				4D3A11C447D309D2A330F2D6 /* SwimHealth in Frameworks */,
+				47A8109673D448642F21D03E /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8837E6C1B8E35649225BEAF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A29DB7968C1F890818D29D /* SwimCore in Frameworks */,
+				6B378D95DAEC73022426F16B /* SwimHealth in Frameworks */,
+				7E0E99451EB1DB5F53C0F480 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1291F1091050125413FE38EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D0D0F4D2FA76DC5B4F7A275 /* SwimmingBeast.app */,
+				16F737AC774FCF60AC5E087E /* SwimmingBeastWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3276979ADA47826FE3AFE7F1 /* SwimPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A88BB2200980BF66AD36061A /* Assets.xcassets */,
+				933C44EBB1ED4D881504D39C /* HistoryStore.swift */,
+				5D5833AB801FBAFB88C2736F /* Info.plist */,
+				A3A2C1F3911DF31BAF6E8D16 /* SwimPhone.entitlements */,
+				1110918A8B8D52C306D82839 /* SwimPhoneApp.swift */,
+				EF47AE98E67CA02C417F464C /* Views */,
+			);
+			path = SwimPhone;
+			sourceTree = "<group>";
+		};
+		60073813E0EB4D5C245CFC26 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3FF439594274868930967F4F /* StrokeStyle+UI.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		751EF3464428E992C9C30FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C67BDA49F254E54EA3F5796 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BA30BF043FCD9CF560ACA3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				877A4159D3FC58ADE99A9D93 /* ActiveSessionView.swift */,
+				408E75D2170492B3262864A8 /* SetupView.swift */,
+				DF8262FD6D2B4A8A9F3CFF29 /* SummaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C3D336CCF81678A10D24CF7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1F15621C4C3BF434A85F5C94 /* SwimKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		C812E25E9B07A331D13A7AC8 /* SwimWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D0ADA30488DFB4DAF213C32F /* Assets.xcassets */,
+				C7B88820F84D00AB020DECF7 /* Info.plist */,
+				3218E7247F9C02482A04FE32 /* SwimWatch.entitlements */,
+				F114235C67E572DA854A9D1A /* SwimWatchApp.swift */,
+				7BA30BF043FCD9CF560ACA3C /* Views */,
+			);
+			path = SwimWatch;
+			sourceTree = "<group>";
+		};
+		DD2087A49214A0953C59FF34 = {
+			isa = PBXGroup;
+			children = (
+				3276979ADA47826FE3AFE7F1 /* SwimPhone */,
+				C812E25E9B07A331D13A7AC8 /* SwimWatch */,
+				60073813E0EB4D5C245CFC26 /* Shared */,
+				7C3D336CCF81678A10D24CF7 /* Packages */,
+				751EF3464428E992C9C30FF8 /* Frameworks */,
+				1291F1091050125413FE38EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF47AE98E67CA02C417F464C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C3C3A89C5B36398B8150783 /* HistoryView.swift */,
+				9C3F869192E389E502093648 /* SettingsView.swift */,
+				DF30DF749B575FACC15C6E26 /* WorkoutDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78995151FE2C07A1C3291E8D /* SwimPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DE94FF1FC715308697156B /* Build configuration list for PBXNativeTarget "SwimPhone" */;
+			buildPhases = (
+				CB3C0947EF2341A36A46751B /* Sources */,
+				FD81253773F61E32146AACBB /* Resources */,
+				8837E6C1B8E35649225BEAF7 /* Frameworks */,
+				5118E269888DE5CD66DE8CDE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A148068A60BFA89E8B444110 /* PBXTargetDependency */,
+			);
+			name = SwimPhone;
+			packageProductDependencies = (
+				362F13DE997E28AAB8217C2B /* SwimCore */,
+				F5FCAAEDBB33C6D801F8F802 /* SwimHealth */,
+			);
+			productName = SwimPhone;
+			productReference = 2D0D0F4D2FA76DC5B4F7A275 /* SwimmingBeast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDA197D180791998F5C05901 /* SwimWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEC3BDEBC013E38E0E1B18C6 /* Build configuration list for PBXNativeTarget "SwimWatch" */;
+			buildPhases = (
+				17A81E7AF31BC32262C5BD29 /* Sources */,
+				F82BF9B432EB32544F59DE7B /* Resources */,
+				1CA73D5D7E57C48F4087BA9B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwimWatch;
+			packageProductDependencies = (
+				351A2BF53B2208247E47C562 /* SwimCore */,
+				BAA10A4A2141601516F8931F /* SwimHealth */,
+			);
+			productName = SwimWatch;
+			productReference = 16F737AC774FCF60AC5E087E /* SwimmingBeastWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FD04E0919261B6EE29B2B3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					78995151FE2C07A1C3291E8D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					BDA197D180791998F5C05901 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE192C08F09E45D4E4F12010 /* Build configuration list for PBXProject "SwimmingBeast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DD2087A49214A0953C59FF34;
+			packageReferences = (
+				5FD9110F4C39986816284840 /* XCLocalSwiftPackageReference "Packages/SwimKit" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78995151FE2C07A1C3291E8D /* SwimPhone */,
+				BDA197D180791998F5C05901 /* SwimWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82BF9B432EB32544F59DE7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37359212F7A1D13CE973C58E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81253773F61E32146AACBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0174B2DA27250B07D6143F10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17A81E7AF31BC32262C5BD29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90958FA6444E7B54165B870 /* ActiveSessionView.swift in Sources */,
+				9075862258DE99DFB5258CB8 /* SetupView.swift in Sources */,
+				A9BC449A91477033182F5CC4 /* StrokeStyle+UI.swift in Sources */,
+				DECB50EF589E23BB00B67BBD /* SummaryView.swift in Sources */,
+				BE6108D3D608B9893045639A /* SwimWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3C0947EF2341A36A46751B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BB42713FDDA30398342041 /* HistoryStore.swift in Sources */,
+				677B7E96C41192538DA3C666 /* HistoryView.swift in Sources */,
+				A706ACD386FB61AC5856D63D /* SettingsView.swift in Sources */,
+				43069893D2AB83925B905BCA /* StrokeStyle+UI.swift in Sources */,
+				A33E0AE222DDF9A370925D31 /* SwimPhoneApp.swift in Sources */,
+				5A6C0FE7AC006E94D58EE873 /* WorkoutDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A148068A60BFA89E8B444110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDA197D180791998F5C05901 /* SwimWatch */;
+			targetProxy = C566BCD82512FD308E5BA905 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58BF1087D0D626FA009EB2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwimWatch/SwimWatch.entitlements;
+				INFOPLIST_FILE = SwimWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swimmingbeast.app.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		766320E93AC4895CB8F02E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7DB15C18A049B7E6CF4DC827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwimPhone/SwimPhone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SwimPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swimmingbeast.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0DD0645E9297E24FD867904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwimWatch/SwimWatch.entitlements;
+				INFOPLIST_FILE = SwimWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swimmingbeast.app.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		E5E08436CAB47373DF030074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwimPhone/SwimPhone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SwimPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swimmingbeast.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F7D2D705851C8629D4EBB369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE192C08F09E45D4E4F12010 /* Build configuration list for PBXProject "SwimmingBeast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766320E93AC4895CB8F02E9E /* Debug */,
+				F7D2D705851C8629D4EBB369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9DE94FF1FC715308697156B /* Build configuration list for PBXNativeTarget "SwimPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB15C18A049B7E6CF4DC827 /* Debug */,
+				E5E08436CAB47373DF030074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EEC3BDEBC013E38E0E1B18C6 /* Build configuration list for PBXNativeTarget "SwimWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DD0645E9297E24FD867904 /* Debug */,
+				58BF1087D0D626FA009EB2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5FD9110F4C39986816284840 /* XCLocalSwiftPackageReference "Packages/SwimKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SwimKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		351A2BF53B2208247E47C562 /* SwimCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwimCore;
+		};
+		362F13DE997E28AAB8217C2B /* SwimCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwimCore;
+		};
+		BAA10A4A2141601516F8931F /* SwimHealth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwimHealth;
+		};
+		F5FCAAEDBB33C6D801F8F802 /* SwimHealth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwimHealth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2FD04E0919261B6EE29B2B3D /* Project object */;
+}
