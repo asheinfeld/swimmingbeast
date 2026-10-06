@@ -1,0 +1,67 @@
+Packages/SwimKit/Package.swift
+  s_f475e3784ebd81::t_997fd4e6b2c94d 1-22
+Packages/SwimKit/Sources/SwimCore/Length.swift
+  s_f475e3784ebd81::t_8a4b254bd394ee 1-55
+Packages/SwimKit/Sources/SwimCore/PoolLength.swift
+  s_f475e3784ebd81::t_a63a62b927c015 1-96
+Packages/SwimKit/Sources/SwimCore/StrokeStyle.swift
+  s_f475e3784ebd81::t_4a97152075bec9 1-67
+Packages/SwimKit/Sources/SwimCore/SwimWorkout.swift
+  s_f475e3784ebd81::t_49fd9bffa1ac81 1-111
+Packages/SwimKit/Sources/SwimHealth/SwimHistory.swift
+  s_f475e3784ebd81::t_1c0434f11e949e 1-73
+README.md
+  s_f475e3784ebd81::t_4d587ea9981e34 1-121
+SwimPhone/Assets.xcassets/AccentColor.colorset/Contents.json
+  s_f475e3784ebd81::t_5af27ae1c4dfb5 1-12
+SwimPhone/Assets.xcassets/AppIcon.appiconset/Contents.json
+  s_f475e3784ebd81::t_b6f0297c5c9752 1-6
+SwimPhone/Assets.xcassets/Contents.json
+  s_f475e3784ebd81::t_44add7a4e11b1a 1-6
+SwimPhone/HistoryStore.swift
+  s_f475e3784ebd81::t_3322c08377f5d0 1-99
+SwimPhone/Info.plist
+  s_f475e3784ebd81::t_26028513017d65 1-42
+SwimPhone/SwimPhone.entitlements
+  s_f475e3784ebd81::t_72e62c51bf1a16 1-10
+SwimPhone/SwimPhoneApp.swift
+  s_f475e3784ebd81::t_267d489903f62c 1-65
+SwimPhone/Views/HistoryView.swift
+  s_f475e3784ebd81::t_01bfb3c6058cea 1-128
+SwimWatch/Assets.xcassets/AccentColor.colorset/Contents.json
+  s_f475e3784ebd81::t_bc6c5c51380530 1-12
+SwimWatch/Assets.xcassets/AppIcon.appiconset/Contents.json
+  s_f475e3784ebd81::t_f6febe8593e85b 1-6
+SwimWatch/Assets.xcassets/Contents.json
+  s_f475e3784ebd81::t_19930b7b187d0b 1-6
+SwimWatch/Info.plist
+  s_f475e3784ebd81::t_10ef7917ce931c 1-36
+SwimWatch/SwimWatch.entitlements
+  s_f475e3784ebd81::t_1f7b9516937710 1-10
+SwimmingBeast.xcodeproj/project.pbxproj
+  s_f475e3784ebd81::t_e2bfc6283d7a4f 1-590
+SwimmingBeast.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+  s_f475e3784ebd81::t_9464afb4c16448 1-7
+SwimmingBeast.xcodeproj/xcshareddata/xcschemes/SwimPhone.xcscheme
+  s_f475e3784ebd81::t_c42b71dd57d4cb 1-115
+SwimmingBeast.xcodeproj/xcshareddata/xcschemes/SwimWatch.xcscheme
+  s_f475e3784ebd81::t_ed2d95821b97c1 1-95
+project.yml
+  s_f475e3784ebd81::t_90b9fab363f075 1-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f6d3161865881a50248df3aa9992e6d7e8f8897d",
+  "prompts": {},
+  "sessions": {
+    "s_f475e3784ebd81": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f99f-f0b0-7a12-9b42-4a44917a2ce7",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Alberto Sheinfeld <825651+asheinfeld@users.noreply.github.com>"
+    }
+  }
+}
